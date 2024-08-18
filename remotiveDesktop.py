@@ -219,7 +219,7 @@ def update_data_labels():
     root.after(500, update_data_labels)
 
 def update_response_in_firebase(new_response):
-    url = "https://remote-fa090-default-rtdb.firebaseio.com/" + ip_without_dots + ".json"
+    url = "YOUR_FIREBASE_URL/" + ip_without_dots + ".json"
     requests.put(url, json=new_response, verify=False)
 
 def main():
@@ -302,5 +302,3 @@ def main():
 if __name__ == "__main__":
     ip_without_dots = socket.gethostbyname(socket.gethostname()).replace(".", "")
     main()
-
-#pyinstaller --onefile --icon=C:\Users\Emir\Desktop\RemoteControl\remotivelogo.png C:\Users\Emir\Desktop\Masaüstü\Kodlama\Projeler\remotiveSon.py
