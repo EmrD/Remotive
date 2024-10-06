@@ -36,6 +36,9 @@
    - Python 3 ve gerekli kütüphaneler (`requests`, `pyautogui`, `Pillow`, `qrcode`, `colorama`, `tkinter`) yüklü olmalıdır.
    - Firebase Realtime Database URL ve diğer yapılandırmaları kod içinde belirlemeniz gerekmektedir.
 
+   ## Önemli Not<br>
+   ```.apk``` dosyasındaki Firebase Realtime Database bağlantıları, proje geliştirilme aşamasında kullanılan Firebase veritabanına bağlanacak şekilde derlenmiştir. Lokal       ortamda çalıştırılabilmesi için bu bağlantı adresinin Python dosyasındaki değişken ile aynı olması gerekmektedir. Gizlilik amacıyla bu URL, Python dosyasında                ```YOUR_FIREBASE_URL``` şeklinde tanımlanmıştır. Bu sebeple lokal ortamdaki Android uygulaması yalnızca örnek amaçlı kullanılmıştır. Kullanıcıların kurulum esnasında bu dosyayı kullanmaması, Remotive masaüstü uygulaması ile senkronize çalışacak şekilde Firebase URL'lerini yapılandırmaları ve daha sonrasında kendi proje URL'lerine özgü ```.apk``` dosyalarını kullanmaları gerekmektedir.   
+
 2. **Tracker Uygulamasını Çalıştırma**
    - `tracker.py` dosyasını çalıştırarak Tracker uygulamasını başlatın.
    - Python 3 ve gerekli kütüphaneler (`cv2`, `numpy`, `pyautogui`) yüklü olmalıdır.
@@ -102,6 +105,10 @@
    - Run the `remotiveSon.py` file to start the Remotive application.
    - Python 3 and necessary libraries (`requests`, `pyautogui`, `Pillow`, `qrcode`, `colorama`, `tkinter`) must be installed.
    - Firebase Realtime Database URL and other configurations need to be set in the code.
+
+   ## Important Note<br>
+   The Firebase Realtime Database links in the ```.apk``` file have been compiled to connect to the Firebase database used during the project development phase. In order to run in a local environment, this connection address must be the same as the variable in the Python file. For privacy purposes, this URL is defined as ``YOUR_FIREBASE_URL`` in the Python file. For this reason, the Android application in the local environment is used for example purposes only. Users should not use this file during installation, they should configure their Firebase URLs to work in sync with the Remotive desktop application, and then use ```.apk``` files specific to their project URLs.
+   
 
 2. **Running the Tracker Application**
    - Run the `tracker.py` file to start the Tracker application.
